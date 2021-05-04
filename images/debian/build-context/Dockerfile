@@ -12,7 +12,7 @@ RUN apt-get update && apt-get install -y \
 
 WORKDIR /build
 
-RUN git clone https://github.com/merbanan/rtl_433
+RUN git clone https://github.com/d-rock6689/rtl_433
 WORKDIR ./rtl_433
 ARG rtl433GitRevision=master
 RUN git checkout ${rtl433GitRevision}
